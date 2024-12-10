@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <!-- ícone de flor -->
+    <link rel="shortcut icon" href="lippia2.ico" type="image/x-icon">
+
+    <style>
+    body {
+        background-color: rgba(223, 224, 223); /* Fundo de cor rosa */
+        display: flex;
+        justify-content: center; /* Centraliza os containers horizontalmente */
+        align-items: flex-start; /* Alinha os containers ao topo da página */
+        min-height: 100vh;
+        margin: 0;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 100px; /* Espaço de 100px acima dos containers */
+    }
+    .icone-caixa {
+        background-color: #fff;
+        padding: 20px;
+        width: 200px;
+        height: 400px; /* Altura fixa para igualar ao map-container */
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        text-align: left; /* Alinha o texto à esquerda */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .icone-caixa div {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .icone {
+        width: 50px;
+        height: 50px;
+        background-color: #f0f0f0;
+        display: inline-block;
+        margin-right: 10px; /* Espaço entre o ícone e a descrição */
+    }
+    .descricao {
+        font-size: 14px;
+        color: #333;
+    }
+    .map-container {
+        width: 45%;
+        max-width: 500px;
+        height: 450px; /* Altura fixa para igualar ao icone-caixa */
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icone-caixa">
+            <div>
+                <img src="1.jpg" alt="Descrição do Ícone 1" class="icone">
+                <div class="descricao">+55 37 99991-9455</div>
+            </div>
+            <div>
+                <img src="2.jpg" alt="Descrição do Ícone 2" class="icone">
+                <div class="descricao">paulamleite-pesquisa-ensino@outlook.com</div>
+            </div>
+            <div>
+                <img src="3.jpg" alt="Descrição do Ícone 3" class="icone">
+                <div class="descricao">paulamleite_</div>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.7939572051237!2d-45.91176562490218!3d-23.21417837903992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc358414695931%3A0x5ab8dd5e6396e637!2sP%C3%A1tio%20das%20Am%C3%A9ricas%20Mall!5e0!3m2!1spt-BR!2sbr!4v1732453685468!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+</html>
